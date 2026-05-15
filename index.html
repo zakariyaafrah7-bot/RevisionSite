@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakariya's Learning Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">📚 Zakariya's Learning Hub</h1>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#science" class="nav-link">Triple Science</a></li>
+                <li><a href="#maths" class="nav-link">Mathematics</a></li>
+                <li><a href="https://www.google.com/search?q=EducationLanZ.com" class="nav-link" target="_blank" rel="noopener">Math Genie</a></li>
+                <li><a href="#english" class="nav-link">English</a></li>
+                <li><a href="#sociology" class="nav-link">Sociology</a></li>
+                <li><a href="#religion" class="nav-link">Religion</a></li>
+                <li><a href="#geography" class="nav-link">Geography</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome, Zakariya! 👋</h2>
+            <p>Your personalized learning hub with comprehensive explanations across all your subjects</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Triple Science Section -->
+        <section id="science" class="subject-section">
+            <h2 class="section-title">🔬 Triple Science</h2>
+            
+            <div class="subject-grid">
+                <!-- Biology -->
+                <div class="card">
+                    <h3>Biology</h3>
+                    <div class="card-content">
+                        <h4>Cell Structure and Function</h4>
+                        <p>Cells are the basic units of life. Plant cells contain a cell wall, chloroplasts, and a large vacuole. Animal cells contain a nucleus, mitochondria, and other organelles. The nucleus contains DNA and controls cell functions.</p>
+                        
+                        <h4>Photosynthesis</h4>
+                        <p>Process where plants use light energy to convert CO₂ and water into glucose and oxygen. Occurs in chloroplasts. Formula: 6CO₂ + 6H₂O + light energy → C₆H₁₂O₆ + 6O₂</p>
+                        
+                        <h4>Respiration</h4>
+                        <p>Process cells use to release energy from glucose. Aerobic respiration produces more ATP than anaerobic respiration. Glucose + oxygen → carbon dioxide + water + energy</p>
+                        
+                        <h4>Genetics & DNA</h4>
+                        <p>DNA carries genetic information. Genes are segments of DNA that code for proteins. Chromosomes contain coiled DNA. During reproduction, genetic material is passed to offspring.</p>
+                        
+                        <h4>Evolution</h4>
+                        <p>Organisms change over time through natural selection. Organisms with advantageous traits survive and reproduce. Over many generations, this leads to adaptation and speciation.</p>
+                    </div>
+                </div>
+
+                <!-- Chemistry -->
+                <div class="card">
+                    <h3>Chemistry</h3>
+                    <div class="card-content">
+                        <h4>Atomic Structure</h4>
+                        <p>Atoms contain a nucleus (protons + neutrons) surrounded by electrons. Protons have positive charge, electrons negative, neutrons neutral. Atomic number = number of protons. Mass number = protons + neutrons.</p>
+                        
+                        <h4>Chemical Bonding</h4>
+                        <p>Ionic bonds form between metals and non-metals through electron transfer. Covalent bonds form between non-metals through electron sharing. Metallic bonds occur between metal atoms.</p>
+                        
+                        <h4>Reactions & Energy</h4>
+                        <p>Exothermic reactions release energy (burning, neutralization). Endothermic reactions absorb energy (melting, evaporation). Catalysts speed up reactions without being consumed.</p>
+                        
+                        <h4>Acids & Bases</h4>
+                        <p>Acids have pH < 7, turn litmus red, and produce H⁺ ions. Bases have pH > 7, turn litmus blue, and produce OH⁻ ions. Neutralization: acid + base → salt + water</p>
+                        
+                        <h4>The Periodic Table</h4>
+                        <p>Elements arranged by atomic number and properties. Groups (vertical columns) have similar properties. Periods (horizontal rows) show trends in properties.</p>
+                    </div>
+                </div>
+
+                <!-- Physics -->
+                <div class="card">
+                    <h3>Physics</h3>
+                    <div class="card-content">
+                        <h4>Forces & Motion</h4>
+                        <p>Newton's First Law: objects at rest stay at rest unless acted upon by force. Second Law: F = ma (force equals mass times acceleration). Third Law: every action has an equal and opposite reaction.</p>
+                        
+                        <h4>Energy</h4>
+                        <p>Kinetic energy: energy of motion (KE = ½mv²). Potential energy: stored energy based on position. Energy is conserved—can be converted between forms but not created or destroyed.</p>
+                        
+                        <h4>Waves</h4>
+                        <p>Waves transfer energy without transferring matter. Transverse waves: oscillation perpendicular to direction of travel (light, water). Longitudinal waves: oscillation parallel to direction (sound, seismic).</p>
+                        
+                        <h4>Electricity & Magnetism</h4>
+                        <p>Circuits contain voltage (potential difference), current (flow of charge), and resistance (opposition to flow). Ohm's Law: V = IR. Magnets have poles; opposite poles attract, same poles repel.</p>
+                        
+                        <h4>Thermodynamics</h4>
+                        <p>Temperature measures average kinetic energy of particles. Heat flows from hot to cold. First Law of Thermodynamics: energy cannot be created or destroyed, only transferred.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Math Genie Widget -->
+        <section id="math-genie" class="subject-section">
+            <h2 class="section-title">🔮 Math Genie</h2>
+
+            <div class="card">
+                <div class="card-content">
+                    <label for="expr" style="display:block; margin-bottom:8px; font-weight:600;">Try an expression</label>
+                    <input id="expr" placeholder="e.g. 3 + 4 * (2 - 1)^2" style="width:100%; padding:0.6rem; margin-bottom:12px; border-radius:6px; border:1px solid var(--border-color);">
+                    <div style="display:flex; gap:8px; margin-bottom:12px;">
+                        <button id="evalBtn" class="small-btn">Evaluate</button>
+                        <button id="clearBtn" class="small-btn">Clear</button>
+                        <button id="copyBtn" class="small-btn">Copy Notes</button>
+                    </div>
+
+                    <div style="margin-top:8px;">
+                        <div style="margin-bottom:8px;"><strong>Result:</strong> <span id="result">—</span></div>
+                        <h4 style="margin:8px 0 6px 0;">Detailed Notes</h4>
+                        <pre id="notes" class="notes-pre" style="max-height:320px; overflow:auto; background:#fbfbff; padding:12px; border-radius:8px; border:1px solid var(--border-color);">Enter an expression and press Evaluate.</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mathematics Section -->
+        <section id="maths" class="subject-section">
+            <h2 class="section-title">🔢 Mathematics</h2>
+            
+            <div class="subject-grid">
+                <div class="card">
+                    <h3>Algebra & Functions</h3>
+                    <div class="card-content">
+                        <h4>Equations & Inequalities</h4>
+                        <p>Linear equations: ax + b = c. Quadratic equations: ax² + bx + c = 0. Use factoring, completing the square, or quadratic formula to solve.</p>
+                        
+                        <h4>Indices & Surds</h4>
+                        <p>Laws of indices: aⁿ × aᵐ = aⁿ⁺ᵐ, aⁿ ÷ aᵐ = aⁿ⁻ᵐ, (aⁿ)ᵐ = aⁿᵐ. Surds are irrational numbers like √2. Rationalize by multiplying by conjugate.</p>
+                        
+                        <h4>Sequences & Series</h4>
+                        <p>Arithmetic sequences: constant difference between terms. General term: aₙ = a₁ + (n-1)d. Geometric sequences: constant ratio between terms. Sum formulas apply for arithmetic and geometric series.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Geometry & Trigonometry</h3>
+                    <div class="card-content">
+                        <h4>Angles & Shapes</h4>
+                        <p>Angles in a triangle sum to 180°. Angles in a quadrilateral sum to 360°. Area formulas: triangle = ½bh, circle = πr², rectangle = lw</p>
+                        
+                        <h4>Trigonometry</h4>
+                        <p>SOHCAHTOA: sin = opposite/hypotenuse, cos = adjacent/hypotenuse, tan = opposite/adjacent. Use in right-angled triangles to find angles and sides.</p>
+                        
+                        <h4>Coordinate Geometry</h4>
+                        <p>Distance between points: √[(x₂-x₁)² + (y₂-y₁)²]. Midpoint: ((x₁+x₂)/2, (y₁+y₂)/2). Gradient/slope: (y₂-y₁)/(x₂-x₁)</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Calculus & Statistics</h3>
+                    <div class="card-content">
+                        <h4>Differentiation (Calculus)</h4>
+                        <p>Derivative shows rate of change. Power rule: d/dx(xⁿ) = nxⁿ⁻¹. Used to find gradients, maximum/minimum values, and rate of change.</p>
+                        
+                        <h4>Statistics & Probability</h4>
+                        <p>Mean: average of all values. Median: middle value. Mode: most frequent value. Standard deviation: measure of spread. Probability: number of favorable outcomes / total outcomes.</p>
+                        
+                        <h4>Vectors</h4>
+                        <p>Vectors have magnitude and direction. Addition: add components. Scalar product: a·b = |a||b|cos(θ). Vectors used in physics and engineering.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- English Language & Literature Section -->
+        <section id="english" class="subject-section">
+            <h2 class="section-title">📖 English Language & Literature</h2>
+            
+            <div class="subject-grid">
+                <div class="card">
+                    <h3>English Language</h3>
+                    <div class="card-content">
+                        <h4>Grammar & Syntax</h4>
+                        <p>Parts of speech: noun (person/place/thing), verb (action), adjective (describes noun), adverb (describes verb), preposition, pronoun, conjunction. Sentences have subject and predicate.</p>
+                        
+                        <h4>Punctuation & Spelling</h4>
+                        <p>Apostrophes for contractions and possession. Commas separate clauses and items in lists. Semicolons connect independent clauses. Colons introduce lists or explanations.</p>
+                        
+                        <h4>Writing Skills</h4>
+                        <p>Formal writing uses third person and technical language. Informal writing is conversational. Academic writing requires evidence and proper citations. Persuasive writing includes rhetorical devices.</p>
+                        
+                        <h4>Linguistic Analysis</h4>
+                        <p>Identify language features: metaphors, similes, alliteration, onomatopoeia. Analyze how writers use language for effect. Consider tone, register, and audience awareness.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>English Literature</h3>
+                    <div class="card-content">
+                        <h4>Literary Devices</h4>
+                        <p>Metaphor: direct comparison (life is a journey). Simile: comparison with 'like' or 'as'. Personification: giving human qualities to non-human things. Imagery: descriptive language appealing to senses.</p>
+                        
+                        <h4>Character Analysis</h4>
+                        <p>Analyze motivations, development, and relationships. Static characters don't change; dynamic characters do. Consider how dialogue reveals character. Archetypes are recurring character types.</p>
+                        
+                        <h4>Theme & Plot</h4>
+                        <p>Theme is the central message or idea. Plot structure: exposition, rising action, climax, falling action, resolution. Symbolism: objects represent abstract ideas.</p>
+                        
+                        <h4>Critical Reading</h4>
+                        <p>Close reading examines specific details for meaning. Contextual reading considers historical and cultural background. Thematic reading identifies central ideas and their development.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Writing & Poetry</h3>
+                    <div class="card-content">
+                        <h4>Poetry Techniques</h4>
+                        <p>Rhyme scheme: pattern of end rhymes. Meter: rhythmic pattern of stressed/unstressed syllables. Rhyme types: perfect rhyme (cat/bat), near rhyme (home/come), internal rhyme within a line.</p>
+                        
+                        <h4>Poetic Forms</h4>
+                        <p>Sonnet: 14 lines with specific rhyme scheme. Haiku: 3 lines (5-7-5 syllables). Free verse: no regular rhyme or meter. Ballad: narrative poem set to music.</p>
+                        
+                        <h4>Essay Writing</h4>
+                        <p>Structure: introduction (thesis statement), body paragraphs (evidence + analysis), conclusion (summary). Use topic sentences and transitions. Support claims with textual evidence.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sociology Section -->
+        <section id="sociology" class="subject-section">
+            <h2 class="section-title">👥 Sociology</h2>
+            
+            <div class="subject-grid">
+                <div class="card">
+                    <h3>Sociological Foundations</h3>
+                    <div class="card-content">
+                        <h4>What is Sociology?</h4>
+                        <p>Study of human society, social relationships, and group behavior. Examines how individuals interact in groups and how society functions. Considers culture, institutions, and social change.</p>
+                        
+                        <h4>Key Sociologists & Theories</h4>
+                        <p>Marx: conflict theory, class struggle. Durkheim: social solidarity, cohesion. Weber: social action, authority. Functionalism: society as interconnected system. Conflict theory: society based on power struggles.</p>
+                        
+                        <h4>Culture & Society</h4>
+                        <p>Culture includes values, beliefs, norms, customs, language, and artifacts. Socialization is process of learning cultural norms. Enculturation: learning one's own culture. Acculturation: adapting to a new culture.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Social Structure & Inequality</h3>
+                    <div class="card-content">
+                        <h4>Social Stratification</h4>
+                        <p>Hierarchical arrangement of groups based on inequality. Social class: economic position and lifestyle. Caste: hereditary social status. Status: social position; roles: expected behaviors. Meritocracy: advancement based on ability.</p>
+                        
+                        <h4>Social Inequality</h4>
+                        <p>Inequality in wealth, income, education, and opportunity. Systemic factors perpetuate inequality. Gender inequality: discrimination based on sex. Racial/ethnic discrimination affects opportunities and outcomes.</p>
+                        
+                        <h4>Institutions</h4>
+                        <p>Family: primary social group. Education: transmits knowledge and values. Economy: produces and distributes goods. Religion: provides meaning and community. Government: maintains order and provides services.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Social Processes & Change</h3>
+                    <div class="card-content">
+                        <h4>Socialization & Identity</h4>
+                        <p>Primary socialization: family in early childhood. Secondary socialization: peers, school, work. Agents of socialization shape values, beliefs, and behaviors. Self: sense of individual identity develops through interaction.</p>
+                        
+                        <h4>Deviance & Social Control</h4>
+                        <p>Deviance: violation of social norms. Crime: violation of laws. Sanctions: rewards for conformity, punishments for deviance. Formal control: laws and institutions. Informal control: family and community approval.</p>
+                        
+                        <h4>Social Change</h4>
+                        <p>Caused by technology, conflict, innovation, and diffusion. Modernization: transition from traditional to modern society. Globalization: worldwide interconnection. Social movements seek to create change.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Religion Section -->
+        <section id="religion" class="subject-section">
+            <h2 class="section-title">✨ Religion & Philosophy</h2>
+            
+            <div class="subject-grid">
+                <div class="card">
+                    <h3>Major World Religions</h3>
+                    <div class="card-content">
+                        <h4>Christianity</h4>
+                        <p>Based on teachings of Jesus Christ. Holy book: Bible (Old & New Testament). Main denominations: Catholic, Protestant, Orthodox. Central beliefs: monotheistic, Jesus as Son of God, salvation through faith.</p>
+                        
+                        <h4>Islam</h4>
+                        <p>Founded by Prophet Muhammad. Holy book: Qur'an. Five Pillars: belief, prayer, charity, fasting, pilgrimage. Monotheistic (Allah is God). Practices: daily prayers, Ramadan fasting, Hajj pilgrimage.</p>
+                        
+                        <h4>Judaism</h4>
+                        <p>Founded by Abraham. Holy books: Torah, Talmud, Tanakh. Monotheistic (one God). Practices: Sabbath observance, Passover, Yom Kippur. Emphasis on Torah study and ethical living.</p>
+                        
+                        <h4>Buddhism</h4>
+                        <p>Founded by Siddhartha Gautama (Buddha). Not monotheistic; focuses on enlightenment. Four Noble Truths: suffering, cause, cessation, path. Eightfold Path guides ethical living.</p>
+                        
+                        <h4>Hinduism</h4>
+                        <p>Ancient religion with complex theology. Polytheistic with many deities. Key concepts: Brahman (ultimate reality), karma, dharma, reincarnation. Vedas are sacred texts.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Religious Concepts</h3>
+                    <div class="card-content">
+                        <h4>Key Beliefs & Practices</h4>
+                        <p>Monotheism: belief in one God. Polytheism: belief in multiple gods. Atheism: disbelief in deities. Agnosticism: belief that God's existence is unknowable. Sacred texts guide believers. Rituals mark important occasions.</p>
+                        
+                        <h4>Ethics & Morality</h4>
+                        <p>Religious ethics provide moral frameworks. Ten Commandments in Judeo-Christian tradition. Karma in Eastern religions links actions to consequences. Golden Rule: treat others as you wish to be treated.</p>
+                        
+                        <h4>Religious Diversity</h4>
+                        <p>Interfaith dialogue promotes understanding. Syncretism: blending of religions. Diaspora: dispersal of religious communities. Religious pluralism: coexistence of different faiths. Religious tolerance supports peaceful coexistence.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Philosophy of Religion</h3>
+                    <div class="card-content">
+                        <h4>Arguments for God's Existence</h4>
+                        <p>Cosmological argument: universe requires a cause. Teleological argument: design suggests designer. Ontological argument: concept of God implies existence. Problem of evil: challenges existence of all-powerful, benevolent God.</p>
+                        
+                        <h4>Philosophical Questions</h4>
+                        <p>Does God exist? Nature of God? Free will vs. determinism. Theodicy: justifying God's allowance of suffering. Religious experience and validity of spiritual claims.</p>
+                        
+                        <h4>Secularism</h4>
+                        <p>Separation of religion and state. Secular ethics based on reason, not scripture. Humanism: human-centered worldview. Naturalism: only natural world exists; no supernatural.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Geography Section -->
+        <section id="geography" class="subject-section">
+            <h2 class="section-title">🌍 Geography</h2>
+            
+            <div class="subject-grid">
+                <div class="card">
+                    <h3>Physical Geography</h3>
+                    <div class="card-content">
+                        <h4>Geomorphology (Landforms)</h4>
+                        <p>Erosion: wearing away by water, wind, ice. Weathering: breakdown of rock in place. Deposition: material settles in new location. Processes create mountains, valleys, plains, and deltas.</p>
+                        
+                        <h4>Climate & Weather</h4>
+                        <p>Climate: long-term weather patterns. Weather: short-term atmospheric conditions. Temperature, precipitation, wind determine climate. Climate zones: tropical, temperate, polar. Climate change from greenhouse gases.</p>
+                        
+                        <h4>Water Systems</h4>
+                        <p>Water cycle: evaporation, condensation, precipitation, collection. Rivers flow downhill, eroding and depositing. Oceans cover 71% of Earth; currents transport heat. Groundwater in aquifers supplies freshwater.</p>
+                        
+                        <h4>Ecosystems & Biomes</h4>
+                        <p>Ecosystems: communities of organisms and their environment. Biomes: large-scale ecosystems (rainforest, desert, tundra). Food chains and webs transfer energy. Biodiversity supports ecosystem health.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Human Geography</h3>
+                    <div class="card-content">
+                        <h4>Population Geography</h4>
+                        <p>Demographics study population characteristics. Birth rate: births per 1000 people. Death rate: deaths per 1000 people. Population growth varies by development level. Migration: movement between regions.</p>
+                        
+                        <h4>Economic Geography</h4>
+                        <p>Primary sector: agriculture, mining, fishing. Secondary sector: manufacturing. Tertiary sector: services. Quaternary sector: information, research. Globalization connects economies worldwide.</p>
+                        
+                        <h4>Urban Geography</h4>
+                        <p>Urbanization: growth of cities. Urban hierarchy: cities by size and function. CBD (Central Business District) core of cities. Suburbanization: expansion outward. Urban issues: congestion, housing, infrastructure.</p>
+                        
+                        <h4>Political & Cultural Geography</h4>
+                        <p>Geopolitics: how geography influences politics. Boundaries: borders between territories. Sovereignty: control over territory. Nationalism: pride in nation-state. Cultural differences shape societies and conflicts.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Environmental Geography</h3>
+                    <div class="card-content">
+                        <h4>Environmental Issues</h4>
+                        <p>Climate change: global warming from greenhouse gases. Deforestation: forest loss for agriculture/development. Pollution: air, water, soil contamination. Resource depletion: overuse of finite resources.</p>
+                        
+                        <h4>Sustainability</h4>
+                        <p>Sustainable development: meets current needs without harming future generations. Renewable resources: can be replenished (solar, wind, water). Conservation: protecting biodiversity and ecosystems.</p>
+                        
+                        <h4>Human-Environment Interaction</h4>
+                        <p>Humans modify environment: agriculture, construction, industry. Natural hazards: earthquakes, hurricanes, floods. Environmental management: reducing human impact. Balance needed between development and conservation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Zakariya's Learning Hub. A personalized educational resource.</p>
+        <p>Keep learning and growing! 🚀</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
